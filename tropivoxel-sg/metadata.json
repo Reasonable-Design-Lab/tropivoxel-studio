@@ -1,0 +1,6 @@
+{
+  "name": "TropiVoxel SG",
+  "description": "Interactive 3D voxel architectural design and microclimate simulation studio for Singapore tropical housing estates (HDB BTO). Real-time monsoon wind, solar shading, structural integrity, and BCA Green Mark analysis.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

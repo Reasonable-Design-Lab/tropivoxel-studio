@@ -1,0 +1,31 @@
+name: Source checks
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "tropivoxel-sg/**"
+      - ".github/workflows/checks.yml"
+  pull_request:
+    paths: ["tropivoxel-sg/**"]
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: tropivoxel-sg
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v6
+        with:
+          node-version: "24"
+          cache: npm
+          cache-dependency-path: tropivoxel-sg/package-lock.json
+      - run: npm ci
+      - run: npm run typecheck
+      - run: npm test
+      - run: npm run build

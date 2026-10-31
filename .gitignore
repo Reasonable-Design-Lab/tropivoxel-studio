@@ -1,0 +1,13 @@
+**/node_modules/
+**/dist/
+**/.env*
+!**/.env.example
+**/*.log
+**/.DS_Store
+**/.sites-runtime/
+**/public/*project.zip
+artifacts/
+**/.aistudio/
+**/legacy/
+*.zip
+Cooler Estates Studio/
