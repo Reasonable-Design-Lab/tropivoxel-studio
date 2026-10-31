@@ -2,6 +2,8 @@
 
 An interactive urban design prototype for Singapore: compare neighbourhood layouts, load real Bishan context, edit individual buildings and explore concept-stage comfort, sun and wind estimates.
 
+**[Open the live studio](https://reasonable-design-lab.github.io/tropivoxel-studio/)** · [GitHub repository](https://github.com/Reasonable-Design-Lab/tropivoxel-studio)
+
 The repository contains the editable React/TypeScript source in **tropivoxel-sg/** and the standalone four-file frontend in **submission/**. GitHub Pages publishes **submission/** through the Publish TropiVoxel workflow. The public frontend uses manual weather and an embedded real OSM sample; live Google Weather/Solar and other OSM location requests require the local server.
 
 Double-click **Start Studio.cmd** to launch the local English-language studio. The original **启动工作室.bat** calls the same launcher.
